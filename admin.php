@@ -5,7 +5,7 @@ if(!isset($_SESSION['admin_logged_in'])){
     exit();
 }
 
-require_once("config.php");
+require_once("config/config.php");
 
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
